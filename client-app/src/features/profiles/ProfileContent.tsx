@@ -3,6 +3,7 @@ import { Tab } from 'semantic-ui-react'
 import ProfilePhotos from './ProfilePhotos'
 import ProfileDescription from './ProfileDescription'
 import ProfileFollowings from './ProfileFollowing'
+import ProfileActivities from './ProfileActivities'
 
 interface IProps {
     setActiveTab: (activeIndex: any) => void;
@@ -11,7 +12,7 @@ interface IProps {
 const panes = [
     { menuItem: 'About', render: () => <ProfileDescription /> },
     { menuItem: 'Photos', render: () => <ProfilePhotos /> },
-    { menuItem: 'Activites', render: () => <Tab.Pane>Activites content</Tab.Pane> },
+    { menuItem: 'Activities', render: () => <ProfileActivities /> },
     { menuItem: 'Followers', render: () => <ProfileFollowings /> },
     { menuItem: 'Following', render: () => <ProfileFollowings /> },
 ]
